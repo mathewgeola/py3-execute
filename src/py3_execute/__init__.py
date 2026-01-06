@@ -1,4 +1,4 @@
-from . import cmd
+from . import _cmd as cmd
 from . import js
 
 __all__ = [
