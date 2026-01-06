@@ -29,7 +29,7 @@ def execute_javascript_by_execjs(
         func_args: tuple[Any, ...] | None = None
 ) -> Any:
     """
-    import execute
+    import py3_execute
 
 
     # language=javascript
@@ -42,7 +42,7 @@ def execute_javascript_by_execjs(
                 return sum;
               } \
               '''
-    result = execute.js.execute_javascript_by_execjs(js_code, func_name="sdk", func_args=(1, 2, "3"))
+    result = py3_execute.js.execute_javascript_by_execjs(js_code, func_name="sdk", func_args=(1, 2, "3"))
     print(result)
 
     Args:
@@ -73,7 +73,7 @@ def execute_javascript_by_py_mini_racer(
         func_args: tuple[Any, ...] | None = None
 ) -> Any:
     """
-    import execute
+    import py3_execute
 
 
     # language=javascript
@@ -86,7 +86,7 @@ def execute_javascript_by_py_mini_racer(
                 return sum;
               } \
               '''
-    result = execute.js.execute_javascript_by_py_mini_racer(js_code, func_name="sdk", func_args=(1, 2, "3"))
+    result = py3_execute.js.execute_javascript_by_py_mini_racer(js_code, func_name="sdk", func_args=(1, 2, "3"))
     print(result)
 
     Args:
@@ -116,7 +116,7 @@ def execute_javascript_by_subprocess(
         arguments: tuple[Any, ...] | None = None,
 ) -> Any:
     """
-    import execute
+    import py3_execute
 
 
     # language=javascript
@@ -129,7 +129,7 @@ def execute_javascript_by_subprocess(
       console.log(JSON.stringify({ "sum": sum }));
     })();'''
 
-    result = execute.js.execute_javascript_by_subprocess(js_code, arguments=(1, 2, "3",))
+    result = py3_execute.js.execute_javascript_by_subprocess(js_code, arguments=(1, 2, "3",))
     print(result["sum"])
 
     Args:

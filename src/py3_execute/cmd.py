@@ -2,7 +2,7 @@ import subprocess
 from dataclasses import dataclass
 
 from charset_normalizer import from_bytes
-from logger import Logger
+import py3_logger
 
 
 @dataclass(frozen=True)
@@ -36,15 +36,15 @@ def _get_text(data: bytes, encoding: str | None = None) -> str:
 def execute_cmd_code_by_subprocess_popen(
         cmd_code: str,
         encoding: str | None = None,
-        logger: Logger | None = None
+        logger: py3_logger.Logger | None = None
 ) -> SubprocessPopenResult:
     """
-    import execute
-    import logger
+    import py3_execute
+    import py3_logger
 
 
-    _logger = logger.get_logger(__name__)
-    execute.cmd.execute_cmd_code_by_subprocess_popen("ping www.baidu.com", "cp936", _logger)
+    logger = py3_logger.get_logger(__name__)
+    py3_execute.cmd.execute_cmd_code_by_subprocess_popen("ping www.baidu.com", "cp936", logger)
 
     Args:
         cmd_code:
@@ -89,15 +89,15 @@ def execute_cmd_code_by_subprocess_popen(
 def execute_cmd_code_by_subprocess_run(
         cmd_code: str,
         encoding: str | None = None,
-        logger: Logger | None = None
+        logger: py3_logger.Logger | None = None
 ) -> SubprocessRunResult:
     """
-    import execute
-    import logger
+    import py3_execute
+    import py3_logger
 
 
-    _logger = logger.get_logger(__name__)
-    execute.cmd.execute_cmd_code_by_subprocess_run("ping www.baidu.com", "cp936", _logger)
+    logger = py3_logger.get_logger(__name__)
+    py3_execute.cmd.execute_cmd_code_by_subprocess_run("ping www.baidu.com", "cp936", logger)
 
     Args:
         cmd_code:

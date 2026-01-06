@@ -1,20 +1,19 @@
-[tool.poetry]
+[project]
 name = "py3-execute"
-version = "0.0.2"
+version = "0.0.3"
 description = "python3 execute"
-authors = ["mathewgeola <mathewgeola@gmail.com>"]
-license = "MIT"
+authors = [
+    {name = "mathewgeola",email = "mathewgeola@gmail.com"}
+]
 readme = "README.md"
-packages = [
-    { include = "execute", from = "src" }
+requires-python = ">=3.12"
+dependencies = [
+    "py3-logger (>=0.0.6,<0.0.7)",
+    "pyexecjs (>=1.5.1,<2.0.0)",
+    "mini-racer (>=0.14.0,<0.15.0)",
+    "orjson (>=3.11.5,<4.0.0)"
 ]
 
-[tool.poetry.dependencies]
-python = ">=3.12"
-pyexecjs = "^1.5.1"
-mini-racer = "^0.12.4"
-orjson = "^3.11.4"
-py3-logger = "^0.0.4"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

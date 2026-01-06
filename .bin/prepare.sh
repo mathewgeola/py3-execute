@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ../.venv/bin/activate
+
 read -r VERSION < ../VERSION
 
 VERSION=$(echo "$VERSION" | xargs)
