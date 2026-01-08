@@ -36,14 +36,14 @@ def _get_text(data: bytes, encoding: str | None = None) -> str:
 def execute_cmd_code_by_subprocess_popen(
         cmd_code: str,
         encoding: str | None = None,
-        logger: py3_logger.Logger | None = None
+        logger: py3_logger.logger.Logger | None = None
 ) -> SubprocessPopenResult:
     """
     import py3_execute
     import py3_logger
 
 
-    logger = py3_logger.get_logger(__name__)
+    logger = py3_logger.logger.get_logger(__name__)
     py3_execute.cmd.execute_cmd_code_by_subprocess_popen("ping www.baidu.com", "cp936", logger)
 
     Args:
@@ -89,14 +89,14 @@ def execute_cmd_code_by_subprocess_popen(
 def execute_cmd_code_by_subprocess_run(
         cmd_code: str,
         encoding: str | None = None,
-        logger: py3_logger.Logger | None = None
+        logger: py3_logger.logger.Logger | None = None
 ) -> SubprocessRunResult:
     """
     import py3_execute
     import py3_logger
 
 
-    logger = py3_logger.get_logger(__name__)
+    logger = py3_logger.logger.get_logger(__name__)
     py3_execute.cmd.execute_cmd_code_by_subprocess_run("ping www.baidu.com", "cp936", logger)
 
     Args:

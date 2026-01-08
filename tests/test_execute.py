@@ -43,7 +43,7 @@ def test_execute():
     result = py3_execute.js.execute_javascript_by_subprocess(js_code, arguments=(1, 2, "3",))
     print(result["sum"])
 
-    logger = py3_logger.get_logger(__name__)
+    logger = py3_logger.logger.get_logger(__name__)
     py3_execute.cmd.execute_cmd_code_by_subprocess_popen("ping www.baidu.com", "cp936", logger)
     py3_execute.cmd.execute_cmd_code_by_subprocess_run("ping www.baidu.com", "cp936", logger)
     print(py3_execute.cmd.execute_cmd_code_by_subprocess_popen("pip show py3-execute", "cp936", logger))

@@ -149,14 +149,14 @@ files = [
 
 [[package]]
 name = "py3-logger"
-version = "0.0.6"
+version = "0.0.7"
 description = "python3 logger"
 optional = false
 python-versions = ">=3.12"
 groups = ["main"]
 files = [
-    {file = "py3_logger-0.0.6-py3-none-any.whl", hash = "sha256:ac94c931cc9c30adc19ec657982d89e6b2112c5b56655858f82a011a9bf96a60"},
-    {file = "py3_logger-0.0.6.tar.gz", hash = "sha256:b7075950e0ed5df57ef89b0059e4ba71ef4304080c2fdc232826b10eede67185"},
+    {file = "py3_logger-0.0.7-py3-none-any.whl", hash = "sha256:6a05ab99772707561aebc100f5f27c0f21b498ffd7b42316e4b24f1b29df2d23"},
+    {file = "py3_logger-0.0.7.tar.gz", hash = "sha256:fc002f1bcc2318a0ca6153d8a77a62ed84b2c34a498b54f19a975f4f1faed736"},
 ]
 
 [package.dependencies]
@@ -191,4 +191,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "feff7828ea26f0d2009462d490d3c52032f2a12cc90fdc93be4de6b7b5e359a3"
+content-hash = "d662c41027549a341ea573ae4ba72fa53005799b23be4ce169e0d4f41f58342c"
